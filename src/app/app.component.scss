@@ -4,11 +4,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-.app-container {
-  overflow: auto;
-  max-height: 100%;
+  background: #00000082;
 }
 
 .app-flex-container {
