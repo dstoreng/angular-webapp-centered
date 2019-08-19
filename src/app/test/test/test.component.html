@@ -1,0 +1,15 @@
+<div fxLayout="column" fxLayoutAlign="start stretch" class="host-el mar-el">
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <div>Welcome</div>
+    <div>to</div>
+    <div>test</div>
+  </div>
+
+  <div fxLayout="column">
+    <a [routerLink]="['iframe']">iframe</a>
+    <a [routerLink]="['text']">text</a>
+    <a [routerLink]="['small']">small</a>
+  </div>
+
+  <router-outlet></router-outlet>
+</div>
