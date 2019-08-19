@@ -1,3 +1,9 @@
-:host{
+@import '../../../breakpoints.scss';
+
+:host {
   height: 100%;
+
+  @media screen and (max-width: $bp-phone) {
+    padding: $padding-phone;
+  }
 }
