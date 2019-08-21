@@ -1,44 +1,54 @@
 @import '../breakpoints.scss';
-
 .app-root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background: #00000082;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and(max-height: $max-height){
+    overflow: auto;
+  }
+}
+
+.app-container {
+  max-height: 100%;
+  //overflow: auto;
 }
 
 .app-flex-container {
   flex-direction: column;
   place-content: stretch center;
   align-items: stretch;
-  justify-content:center;
-  display:flex;
-  flex-grow: 1;
 
-  overflow: auto;
-
-  height: 100%;
-  max-height: $max-height;
   max-width: $max-width;
+  max-height: $max-height;
   min-width: $min-width;
-  width: 100%;
+  min-height: $min-height;
+  width: 85vw;
+  //height: 60vh;
 
-  padding: $padding-phone;
-  margin:auto;
 
   box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
   border-radius: 4px;
-
-  // small devices
-  @media screen and (max-width: $bp-phone) {
-    max-width: none;  // No restriction on width/height
-    max-height: none;
-
-    margin: 0;        // No margin/padding
+  margin: 1em;
+  padding: 1em;
+  overflow: auto;
+  @media screen and(max-width: $bp-phone) {
+    overflow: unset;
+    max-width: none;
+    max-height: 100vh;
+    height: 90vh;
+    min-width: 350px;
+    min-height: unset;
     padding: 0;
-
-    border-radius: 0; // No borders
+    margin: 1em 0.5em;
+    border-radius: 0;
     box-shadow: none;
+    width: 90vw;
   }
 }
 

@@ -1,5 +1,10 @@
-$bp-phone: 600px;
-$max-height: 750px;
-$max-width: 600px;
-$min-width: 350px;
-$padding-phone: 1em;
+$bp-phone: 600px;   // When the layout switches to mobile layout
+$padding-phone: 1em; // Padding applied inside the frame on mobile layout
+
+$max-height: 750px; // Max height of the frame
+$min-height: 550px; // Min height of the frame
+
+$max-width: 600px;  // Max width of the frame
+$min-width: 350px;  // Min width of the frame
+
+
